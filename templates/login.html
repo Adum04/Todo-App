@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock link %}
+
+{% block body %}
+
+<div class="wrapper">
+    <form method="POST" action="{{ url_for('login') }}">
+        {{ form.hidden_tag() }} 
+        
+        <h1>Login</h1>
+        
+        <div class="input-box">
+            {{ form.email(class_="form-control", placeholder="Email") }}
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+            {{ form.password(class_="form-control", placeholder="Password") }}
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+        
+        <div class="register-link">
+            <p>Don't have an account? <a href="{{ url_for('signup') }}">Register</a></p>
+        </div>
+    </form>
+</div>
+{% endblock body %}

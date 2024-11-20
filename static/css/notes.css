@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+.wrapper {
+    position: absolute;
+    top: 100px; 
+    left: 20px;  
+    width: 500px; 
+    background: transparent;
+    border: none;
+    color: whitesmoke;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1 {
+    font-size: 36px; 
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.wrapper form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper label {
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.wrapper input,
+.wrapper textarea {
+    width: 100%;
+    background: transparent;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    font-size: 16px;
+    color: whitesmoke;
+    padding: 10px;
+    resize: none;
+}
+
+.wrapper textarea {
+    height: 250px;  
+}
+
+.wrapper input::placeholder,
+.wrapper textarea::placeholder {
+    color: #888;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #9b9191, #2f362f);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.wrapper .btn:hover {
+    background: linear-gradient(to right, #66BB6A, #4CAF50);
+    transform: translateY(-4px);
+}
+
+.wrapper .btn:active {
+    transform: translateY(2px);
+}
+
+
+.notes-table {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    width: 800px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notes-table h2 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.notes-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.notes-table th, 
+.notes-table td {
+    padding: 10px;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.notes-table th {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+.notes-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.action-box {
+    display: flex;
+    gap: 20px;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+
+.action-button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff; 
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+
+.action-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.action-box button.action-button {
+    text-decoration: none; 
+    appearance: none; 
+}

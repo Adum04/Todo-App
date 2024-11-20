@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Sign Up
+{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+{% endblock link %}
+
+{% block body %}
+
+<div class="wrapper">
+    <form method="POST" action="{{ url_for('signup') }}">
+        {{ form.hidden_tag() }} 
+        <h1>Create Account</h1>
+
+        <div class="input-box">
+            {{ form.name(class_="form-control", placeholder="Enter your Name") }}
+            <i class='bx bxs-user'></i>
+        </div>
+
+        <div class="input-box">
+            {{ form.email(class_="form-control", placeholder="Enter your Email") }}
+            <i class='bx bxs-envelope'></i>
+        </div>
+
+        <div class="input-box">
+            {{ form.password(class_="form-control", placeholder="Enter your Password") }}
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <div class="input-box">
+            {{ form.confirm_password(class_="form-control", placeholder="Confirm Password") }}
+            <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+
+        <div class="register-link">
+            <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+        </div>
+    </form>
+</div>
+{% endblock body %}

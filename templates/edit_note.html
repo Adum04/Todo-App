@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit Note{% endblock title %}
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/editpage.css') }}">
+{% endblock link %}
+
+{% block body %}
+
+<div class="wrapper">
+  
+  <form method="POST">
+      {{ form.hidden_tag() }}
+      <div>
+          {{ form.title.label }}
+          {{ form.title(class="form-control", value=note.title) }}
+      </div>
+      <div>
+          {{ form.description.label }}
+          {{ form.description(class="form-control", value=note.description) }}
+      </div>
+      <div>
+          {{ form.submit(class="btn") }}
+      </div>
+  </form>
+</div>
+
+{% endblock body %}

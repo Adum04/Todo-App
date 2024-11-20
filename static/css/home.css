@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bradley Hand', cursive;
+}
+
+.header {
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; 
+}
+
+.login-btn {
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    padding: 6px 30px; 
+    cursor: pointer; 
+    font-size: 22px; 
+    transition: background-color 0.3s;
+    position: absolute; 
+    right: 650px; 
+    top: 600px; 
+}
+
+.content {
+    align-items: center;
+    position: absolute;
+    top: 70px;
+    right: 450px;
+    color: whitesmoke;
+    font-size: 90px;
+}
+
+.cont {
+    align-items: center;
+    position: absolute;
+    top: 550px;
+    right: 370px;
+    color: whitesmoke;
+}
+
+.co {
+    align-items: center;
+    position: absolute;
+    top: 320px;
+    right: 460px;
+    color: whitesmoke;
+}
+
+.c {
+    align-items: center;
+    position: absolute;
+    top: 380px;
+    right: 430px;
+    color: whitesmoke;
+}
