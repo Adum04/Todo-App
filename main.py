@@ -8,8 +8,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import timedelta
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "SECRET KEy bro "
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///tada.db"
+app.config["SECRET_KEY"] = os.getenv("SECRET KEY")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("SECRET DATABASE KEY")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(days=2)
 
