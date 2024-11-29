@@ -83,3 +83,69 @@
 .register-link p a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .wrapper {
+        top: 100px;
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Correct horizontal centering */
+        width: 90%;
+        max-width: 400px; /* Prevents the form from stretching too wide */
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    .wrapper h1 {
+        font-size: 28px;
+        text-align: center; /* Centering the title */
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding: 15px 35px 15px 15px;
+    }
+
+    .wrapper .btn {
+        font-size: 18px;
+        height: 40px;
+        padding: 10px; /* Adjusts button size */
+    }
+
+    .wrapper .register-link {
+        font-size: 12px;
+        text-align: center; /* Center the register link */
+    }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+    .wrapper {
+        top: 10px;
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Correct horizontal centering */
+        width: 85%; /* Adjusts width for smaller screens */
+        max-width: 350px; /* Smaller max width */
+        padding: 15px;
+    }
+
+    .wrapper h1 {
+        font-size: 24px;
+        text-align: center; /* Centering the title */
+    }
+
+    .input-box input {
+        font-size: 12px;
+        padding: 10px 25px 10px 10px;
+    }
+
+    .wrapper .btn {
+        font-size: 16px;
+        height: 35px;
+        padding: 8px; /* Adjusts button size */
+    }
+
+    .wrapper .register-link {
+        font-size: 10px;
+        text-align: center; /* Center the register link */
+    }
+}

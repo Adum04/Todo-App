@@ -58,3 +58,57 @@
     right: 430px;
     color: whitesmoke;
 }
+
+@media (max-width: 768px) {
+    .login-btn {
+        font-size: 18px;
+        /* padding: 15px 0px; */
+        position: fixed;
+        right: 150px;
+        bottom: 20px;
+        width: auto;
+    }
+
+    .content {
+        font-size: 30px;
+        top: 300px;
+        right: 130px;
+    }
+
+    .cont, .co, .c {
+
+        font-size: 2px !important; /* Apply font-size with !important */
+        text-align: center;
+        right: 5px;
+        margin: 5px 5px;
+    }
+
+    .cont {
+        top: 175px;
+    }
+
+    .co {
+        top: 250px;
+    }
+
+    .c {
+        top: 300px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .login-btn {
+        font-size: 16px;
+        /* padding: 0px 20px; */
+    }
+
+    .content {
+        font-size: 24px;
+        top: 60px;
+    }
+
+    .cont, .co, .c {
+        font-size: 16px;
+    }
+}
